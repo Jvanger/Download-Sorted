@@ -1,0 +1,23 @@
+class FileHandler(FileSystemEventHandler): 
+    i = 1
+    
+    def on_modified(self, event): 
+       
+        for filename in os.listdir(tracked_folder):
+            i = 1 #placeholder for multiple of same files 
+            if filename != 'work':             #prevent file from placing itself into same folder 
+                try:    
+                    extension = str(os.path.splitext(tracked_folder + "/" + holder_name)[1])
+                    holder_name = filename
+                    file_exists = os.path.isfile(extension_folders[extension] + "/" + filename)  #check if file path exists (return boolean)
+                    while file_exists:
+                        i += 1                 #renaming for multiple same-name files 
+                        holder_name = os.path.splitext(extension_folders[extension] + "/" + holder_name)[0] + str(i) + os.path.split(extension_folders[extension] + "/" + holder_name)[1]
+                        holder_name = filename.splitext("/")[4]
+                        file_exists = os.path.isfile(extension_folders[extension] + "/" + holder_name)
+                    src = tracked_folder + "/" + filename
+                    holder_name = extension_folders[extension] + "/" + holder_name #inherits all the folders from extension folders and becomes new destination
+                    os.rename(src, holder_name) 
+                except Exception: 
+                    print (filename)
+                
