@@ -1,0 +1,11 @@
+event_handler = FileHandler()
+observer = Observer()
+observer.schedule(event_handler, tracked_folder, recursive=True)
+observer.start()
+
+try:
+    while True:
+        time.sleep(1)
+except KeyboardInterrupt:
+     observer.stop()
+observer.join()
