@@ -125,21 +125,5 @@ extension_folders = {
         '.py':     "/Users/work/Desktop/SortedFiles/Code",
         '.sh':     "/Users/work/Desktop/SortedFiles/Code",
         '.h':      "/Users/work/Desktop/SortedFiles/Code",
-       
-        # system
-        '.bak':    "/Users/work/Desktop/SortedFiles/System",
-        '.cab':    "/Users/work/Desktop/SortedFiles/System",
-        '.cfg':    "/Users/work/Desktop/SortedFiles/System",
-        '.cpl':    "/Users/work/Desktop/SortedFiles/System",
-        '.cur':    "/Users/work/Desktop/SortedFiles/System",
-        '.dll':    "/Users/work/Desktop/SortedFiles/System",
-        '.dmp':    "/Users/work/Desktop/SortedFiles/System",
-        '.drv':    "/Users/work/Desktop/SortedFiles/System",
-        '.icns':   "/Users/work/Desktop/SortedFiles/System",
-        '.ico':    "/Users/work/Desktop/SortedFiles/System",
-        '.ini':    "/Users/work/Desktop/SortedFiles/System",
-        '.lnk':    "/Users/work/Desktop/SortedFiles/System",
-        '.msi':    "/Users/work/Desktop/SortedFiles/System",
-        '.sys':    "/Users/work/Desktop/SortedFiles/System",
-        '.tmp':    "/Users/work/Desktop/SortedFiles/System"
+      
         }
